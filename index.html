@@ -17,8 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/fontawesome/css/all.css" rel="stylesheet">
+    <link href="lib/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -47,44 +49,33 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">Adiva</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <!-- <h1 class="m-0">Adiva</h1> -->
+                    <img src="img/ljnpng.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="#paket" class="nav-item nav-link">Paket</a>
+                        <a href="#produkservis" class="nav-item nav-link">Produk & Service</a>
+                        <a href="#klien" class="nav-item nav-link">Klien</a>
+                        <a href="#alamat" class="nav-item nav-link">Alamat & Kontak</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+            <div class="container-xxl py-5 bg-warning hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated zoomIn">All in one SEO tool need to grow your business rapidly</h1>
-                            <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <h1 class="text-white mb-4 animated zoomIn">LINTAS JARINGAN NUSANTARA CIREBON</h1>
+                            <p class="text-white pb-3 animated zoomIn">Lintas Jaringan Nusantara atau LJN Cirebon adalah salah satu Mitra perusahaan yang bergerak di bidang Internet Service Provider dan One Stop IT Solution di Cirebon. LJN menyediakan produk dan layanan untuk berbagai kebutuhan IT mulai dari pengadaan perangkat, konfigurasi lokal, konfigurasi perangkat keras dan perangkat lunak, hingga pemeliharaan jaringan area lokal. Sesuai dengan visi dan misinya, LJN berkomitmen untuk dapat memberikan layanan terbaik di bidang informasi dan teknologi digital di Cirebon. Dengan membawa nilai-nilai inti WE CARE, kami akan terus membuat inovasi baru untuk memastikan teknologi berkualitas.
+                            </p>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid" src="img/hero.png" alt="">
+                            <img class="img-fluid img-broadcast" src="img/undraw_internet_on_the_go_re_vben.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -92,244 +83,215 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Us</h6>
-                            <h2 class="mt-2">The best SEO solution with 10 years of experience</h2>
-                        </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Newsletter Start -->
-        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Ready to get started</h3>
-                        <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter End -->
-
-
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
+        <!-- Paket Start -->
+        <div class="container-xxl py-5" id="paket">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
-                    <h2 class="mt-2">What Solutions We Provide</h2>
+                    <h6 class="position-relative d-inline text-warning ps-4">Paket Layanan Internet</h6>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                    <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-wifi fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h6 class="mb-3 text-center">Speed Up to</h6>
+                            <h2 class="mb-3 text-center"><strong>10Mbps</strong></h2>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Kuota 100</h6>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Biaya Aktivasi Rp.0</h6>
+                            <a class="btn px-3 mt-2 mx-auto">Rp. 199.800</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                    <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-wifi fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Web Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h6 class="mb-3 text-center">Speed Up to</h6>
+                            <h2 class="mb-3 text-center"><strong>20Mbps</strong></h2>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Kuota 100</h6>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Biaya Aktivasi Rp.0</h6>
+                            <a class="btn px-3 mt-2 mx-auto">Rp. 271.950</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                    <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-wifi fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Social Media Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h6 class="mb-3 text-center">Speed Up to</h6>
+                            <h2 class="mb-3 text-center"><strong>50Mbps</strong></h2>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Kuota 10</h6>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Biaya Aktivasi Rp.0</h6>
+                            <a class="btn px-3 mt-2 mx-auto">Rp. 527,250</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                    <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-wifi fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Email Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h6 class="mb-3 text-center">Speed Up to</h6>
+                            <h2 class="mb-3 text-center"><strong>3Mbps</strong></h2>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Biaya Aktivasi Rp.100.000</h6>
+                            <a class="btn px-3 mt-2 mx-auto">Rp. 250.000</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                    <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-wifi fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">PPC Advertising</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h6 class="mb-3 text-center">Paket</h6>
+                            <h2 class="mb-3 text-center"><strong>KEMITRAAN</strong></h2>
+                            <h6 class="text-left"><i class="fas fa-check-square"></i> Biaya Aktivasi Rp.0</h6>
+                            <a class="btn px-3 mt-2 mx-auto">Rp. 5.500.000</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- paket End -->
+
+         <!-- Klien Start -->
+         <div class="container-xxl bg-warning testimonial py-3 my-3 wow fadeInUp" id="klien" data-wow-delay="0.1s">
+            <div class="container py-3 px-lg-3">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded text-white p-2">
+                        <img src="img/our client/Indosat-1-1.png" alt="indosat">
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-2">
+                        <img src="img/our client/Maruhachi.png" alt="indosat">
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-2">
+                        <img src="img/our client/Multidata-1.png" alt="indosat">
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-2">
+                        <img src="img/our client/Mvnet-1.png" alt="indosat">
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-2">
+                        <img src="img/our client/NIPPON.png" alt="indosat">
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded text-white p-2">
+                        <img src="img/our client/PT_Duckil_Textile-removebg-preview.png" alt="indosat">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Klien End -->
 
 
         <!-- Portfolio Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" id="produkservis">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Projects</h6>
-                    <h2 class="mt-2">Recently Launched Projects</h2>
+                    <h6 class="position-relative d-inline text-warning ps-4">Produk, Servis & Public Relation Service</h6>
                 </div>
                 <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="col-12 text-center">
                         <ul class="list-inline mb-5" id="portfolio-flters">
                             <li class="btn px-3 pe-4 active" data-filter="*">All</li>
-                            <li class="btn px-3 pe-4" data-filter=".first">Design</li>
-                            <li class="btn px-3 pe-4" data-filter=".second">Development</li>
+                            <li class="btn px-3 pe-4" data-filter=".first">Produk & Service</li>
+                            <li class="btn px-3 pe-4" data-filter=".second">Public Relation Sevice</li>
                         </ul>
                     </div>
                 </div>
                 <div class="row g-4 portfolio-container">
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-4 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <div class="col-lg col-md wow zoomIn" data-wow-delay="0.1s">
+                                <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                    <div class="service-icon flex-shrink-0">
+                                        <i class="fa fa-server fa-2x"></i>
+                                    </div>
+                                    <h2 class="text-center">DATA CENTER</h2>
+                                    <small class="text-center">Percayakan keamanan data-data penting dan stabilitas sistem anda kepada kami, PT Lintas Jaringan Nusantara, kami menyediakan layanan Hosting Server, VPS, dan Co-location untuk memenuhi kebutuhan client kami akan layanan hostung dan storage yang handal dengan harga terjangkau.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-4 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <div class="col-lg col-md wow zoomIn" data-wow-delay="0.1s">
+                                <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                    <div class="service-icon flex-shrink-0">
+                                        <i class="fa fa-network-wired fa-2x"></i>
+                                    </div>
+                                    <h2 class="text-center">AKSES INTERNET</h2>
+                                    <small class="text-center">Layanan akses internet dengan kecepatan tinggi yang handal dan stabil, didukung jaringan yang tersebar luas lebih dari 100 kota di indonesia. Namun didukung oleh teknisi kami yang profesional dan berpengalaman dibidangnya. Kami siap untuk menuediakan layanan yang optimal kepada seluruh penguna jasa kami.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-4 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <div class="col-lg col-md wow zoomIn" data-wow-delay="0.1s">
+                                <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                    <div class="service-icon flex-shrink-0">
+                                        <i class="fa fa-tools fa-2x"></i>
+                                    </div>
+                                    <h2 class="text-center">IT SOLUTION</h2>
+                                    <small class="text-center">Selain akses internet. Kami juga menyediakan layanan/jasa solusi berbasis teknologi digital baik untuk perorangan, bisnis UMKM Perusahaan maupun instansi. Beberapa diantaranya mencakup pengadaan sistem keamanan (CCTV), Saluran telepon dengan sistem VOIP, dan interkoneksi antar lokasi.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-4 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <div class="col-lg col-md wow zoomIn" data-wow-delay="0.1s">
+                                <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                    <div class="service-icon flex-shrink-0">
+                                        <i class="fa fa-clock fa-2x"></i>
+                                    </div>
+                                    <h2 class="text-center">24-Hours NOC</h2>
+                                    <small class="text-center">Kami memiliki tim khusus yang secara terus menerus bekerja untuk memaksimalkan performa jaringan kami, dengan Dukungan NOC dan teknisi 7 x 24 jam yang andal dan berpengalaman.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-4 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <div class="col-lg col-md wow zoomIn" data-wow-delay="0.1s">
+                                <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                    <div class="service-icon flex-shrink-0">
+                                        <i class="fa fa-tachometer-alt fa-2x"></i>
+                                    </div>
+                                    <h2 class="text-center">No FUP</h2>
+                                    <small class="text-center">Hampir semua provider internet menerapkan kebijakan FUP. Lintas Jaringan Nusantara sama sekali tidak memberlakukan hal tersebut.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-4 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                <div class="service-icon flex-shrink-0">
+                                    <i class="fa fa-database fa-2x"></i>
                                 </div>
+                                <h2 class="text-center">Bandwith Dedicated</h2>
+                                <small class="text-center">Dengan rasio download dan upload terbaik, Lintas Jaringan Nusantara menjawab semua kebutuhan internet kamu. Kami memberikan rasio download dan upload sampai 1:1.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                <div class="service-icon flex-shrink-0">
+                                    <i class="fa fa-desktop fa-2x"></i>
+                                </div>
+                                <h2 class="text-center">Realtime Monitoring</h2>
+                                <small class="text-center">Pemantauan Trafik yang Nyata dan memastikan akses internet kami distribusikan dengan baik kepada Pengguna Akhir.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <div class="service-item service-border d-flex flex-column justify-content-center rounded">
+                                <div class="service-icon flex-shrink-0">
+                                    <i class="fa fa-code-branch fa-2x"></i>
+                                </div>
+                                <h2 class="text-center">SLA 99,9%</h2>
+                                <small class="text-center">Jaminan tertinggi untuk Uptime kelas dunia, ditambah tautan berlebihan yang telah mencakup satu sama lain dianatar BTS.</small>
                             </div>
                         </div>
                     </div>
@@ -337,182 +299,30 @@
             </div>
         </div>
         <!-- Portfolio End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
-                    <h2 class="mt-2">Meet Our Team Members</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Jhon Doe</h5>
-                                <small>CEO</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Emma William</h5>
-                                <small>Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Noah Michael</h5>
-                                <small>Designer</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
         
-
         <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" id="alamat" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="col-md-4 col-lg-4">
+                        <h5 class="text-white mb-4"></h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Jl. Bahagia No.40, Panjunan, Kec. Lemahwungkuk, Kota Cirebon, Jawa Barat 45112</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>08156451971</p>
+                        <p><i class="fa fa-envelope me-3"></i>ljn@gmail.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-4 col-lg-4">
                         <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="#paket">Contact Us</a>
+                        <a class="btn btn-link" href="#produkservis">Produk & Service</a>
+                        <a class="btn btn-link" href="#klien">Klien</a>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Project Gallery</h5>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
+                    <div class="col-md-4 col-lg-4">
+                        <iframe class="map-alamat" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4422676757367!2d108.5668388!3d-6.715759299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee3982058fb49%3A0xc52ac0e239efaa99!2sPT.%20Lintas%20Jaringan%20Nusantara%20(LJN%20Cirebon)!5e0!3m2!1sen!2sid!4v1684572684302!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -520,18 +330,10 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">lintasfiber.net</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
+							<!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> -->
                         </div>
                     </div>
                 </div>
@@ -541,12 +343,16 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+        <!-- <a href="#" class="btn btn-lg btn-warning btn-lg-square back-to-top pt-2"><i class="fa fa-arrow-up"></i></a> -->
+        <a class="chat-wa-icon" aria-label="Chat on WhatsApp" href="https://wa.me/6282120781678"> <img alt="Chat on WhatsApp" class="chat-wa-logo" src="img/wa-logo-3.png" /></a>
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="lib/fontawesome/js/all.js"></script>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
