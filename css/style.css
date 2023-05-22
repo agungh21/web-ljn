@@ -268,7 +268,7 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
-    height: 350px;
+    height: 400px;
     padding: 30px 25px;
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -300,6 +300,20 @@ h6,
     color: var(--primary);
 }
 
+.service-item .icon-check{
+    color: var(--primary);
+}
+
+.service-item .text-first{
+    color: var(--primary);
+}
+
+.service-item .text-second{
+    color: var(--secondary);
+}
+
+.service-item .text-first,
+.service-item .icon-check,
 .service-item small,
 .service-item h2,
 .service-item h6,
@@ -308,7 +322,8 @@ h6,
     transition: .5s;
 }
 
-.service-item:hover small,
+.service-item:hover .text-first,
+.service-item:hover .icon-check,
 .service-item:hover h2,
 .service-item:hover h6,
 .service-item:hover h5,
@@ -346,10 +361,57 @@ h6,
     background: var(--light);
 }
 
+.service-item a.btn.text-second {
+    position: relative;
+    display: flex;
+    color: var(--secondary);
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover a.btn.text-second {
+    color: var(--secondary);
+}
+
+.service-item a.btn.text-second::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #DDDDDD;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item:hover a.btn.text-second::before {
+    width: 100%;
+    background: var(--light);
+}
+
+
 .service-border{
     border: 1px solid var(--primary);
 }
 
+div h1.fs-title{
+    font-size: large;
+    color: var(--light);
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--primary);
+    padding: 5px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s;
+}
+
+.service-item table{
+    padding: 3px;
+}
 
 /*** Testimonial ***/
 .newsletter,
@@ -563,4 +625,109 @@ h6,
 
 .img-broadcast{
     width: 100%;
+}
+
+.text-sup{
+    vertical-align: super;
+    font-size: smaller;
+    font-weight: 800;
+    color: var(--secondary);
+    text-shadow: 1px 1px 1px #777777;
+}
+
+.text-sub{
+    font-size: 18px;
+}
+
+/* gauge */
+.gauge {
+    width: 100%;
+    max-width: 250px;
+    font-size: 32px;
+    color: #004033;
+  }
+  
+  .gauge__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #b4c0be;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+  }
+  
+  .gauge__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: var(--secondary);
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .gauge__cover {
+    width: 75%;
+    height: 150%;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+
+    color: var(--secondary);
+    font-weight: 500;
+  }
+
+  div.the-line{
+    margin: 10px;
+    border-bottom: 1px solid var(--secondary);
+  }
+
+  .text-coretan{
+    text-decoration: line-through;
+  }
+
+
+/* animation */
+.animasi-atas-bawah {
+    -webkit-animation: action 2s infinite  alternate;
+    animation: action 2s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.animasi-atas-bawah-reverse {
+    -webkit-animation: actionreverse 2s infinite  alternate;
+    animation: actionreverse 2s infinite  alternate;
+}
+
+@-webkit-keyframes actionreverse {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+@keyframes actionreverse {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
 }
