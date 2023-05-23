@@ -730,6 +730,24 @@ div h1.fs-title{
     width: 250px;
 }
 
+/* ljn text animated */
+.text-animated{
+    font-size: 75px;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--light);
+    background-image: url(../img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
 /* time line */
 h1 {
     text-align: center;
@@ -926,3 +944,5 @@ h1 {
     0% { transform: translateY(0); }
     100% { transform: translateY(10px); }
 }
+
+/* speedometer */
