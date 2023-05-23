@@ -67,6 +67,14 @@
         return false;
     });
 
+    // show-hide-wa
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.show-hide-wa').fadeIn('slow');
+        } else {
+            $('.show-hide-wa').fadeOut('slow');
+        }
+    });
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -75,7 +83,7 @@
         margin: 25,
         dots: false,
         loop: true,
-        center: true,
+        center: false,
         responsive: {
             0:{
                 items:1
@@ -88,6 +96,9 @@
             },
             992:{
                 items:3
+            },
+            1220:{
+                items:4
             }
         }
     });
@@ -98,6 +109,7 @@
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
+
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
@@ -107,20 +119,5 @@
     
 })(jQuery);
 
- // Gauge
- const gaugeElement = document.querySelector(".gauge");
-
- function setGaugeValue(gauge, value) {
-     if (value < 0 || value > 1) {
-         return;
-     }
-
-     gauge.querySelector(".gauge__fill").style.transform = `rotate(${
-         value / 2
-     }turn)`;
-     gauge.querySelector(".gauge__cover").textContent = `${Math.round(
-         value * 100
-     )}Mbps`;
- }
-
- setGaugeValue(gaugeElement, 0.1);
+// year
+document.getElementById("footer-year").innerHTML = new Date().getFullYear();
