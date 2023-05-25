@@ -46,7 +46,6 @@
     text-shadow: 1px 1px 5px var(--light);
 }
 
-
 /*** Heading ***/
 h1,
 h2,
@@ -1163,4 +1162,8 @@ ul.time-line li .descr::before {
 
 .img-partner{
     width: 150px;
+}
+
+.text-kapital{
+    text-transform: uppercase;
 }
